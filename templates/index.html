@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="static/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Doctor's Handwriting Recognition</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav__menu">
+                    <img src="/static/img/logo.jpg" alt="Logo" class="nav__logo-img">
+                    <a href="#" class="nav__logo">Doctor's HW Recognition</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link" style="color: white;">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" style="color: white;">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link" style="color: white;">HW Recognition</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link" style="color: white;">AI Diagnosis</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link" style="color: white;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Welcome to <br><span class="home__title-color">Doctor's Handwriting<br>Recognition</span> <br> System</h1>
+
+                    <a href="#" class="button">AI Powered Solution</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://linkedin.com" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://medium.com" class="home__social-icon"><i class='bx bxl-medium'></i></a>
+                    <a href="https://github.com" class="home__social-icon"><i class='bx bxl-github'></i></a>
+
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="-40" y="0" href="{{ url_for('static', filename='img/doctors.png') }}"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/static/img/aiml.jpeg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">Leveraging AI and ML in healthcare</h2>
+                        <p class="about__text">Leveraging Artificial Intelligence (AI) and Machine Learning (ML) in healthcare is revolutionizing the industry by providing innovative solutions to long-standing problems. One such solution is leveraging AI and ML for doctor's handwritten recognition and E-diagnosis by analyzing symptoms.<br>
+                        <br>Traditionally, doctors use their expertise and experience to diagnose patients based on their symptoms, medical history, and physical examination. However, with the advent of AI and ML, it is now possible to analyze large amounts of data to recognize doctors' handwritten notes and diagnose patients accurately based on their symptoms.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Handwriting Recognition</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Decoding your prescription</h2>
+                        <p class="skills__text">For this, we have trained an intense deep learning CNN model with 10,000+ images. And we are continuously working on increasing the model's accuracy. The result's generated by our system may not be 100% accurate each time. So, in case of anything severe, we highly recommend you to sort out any confusion with the respective doctor.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-html5 skills__icon'></i> -->
+                                <!-- <span class="skills__name"></span> -->
+                            </div>
+                            <!--
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            -->
+                           <ul class="ul_bulleted">
+  <li>>  Image Size: The size of the image should not exceed 4MB.</li>
+  <li>>  Image Resolution: The recommended minimum resolution for images is 640 x 480 pixels. However, higher resolution images can improve accuracy.</li>
+  <li>>  File Types: The system supports JPEG, PNG8, PNG24, GIF (non-animated), BMP, and WEBP image file formats.</li>
+  <li>>  Image Content: System may not be able to recognize certain types of content, such as low-contrast images or text in unusual fonts.</li>
+</ul>
+
+
+                        </div>
+                        <form id="image-form" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" class="uploadButton"> <p>
+<br>
+                        </p>
+      <button type="submit" class="button">Analyze Image</button>
+    </form>
+
+                    </div>
+
+                    <div>
+                        <h2 class="skills__subtitle">Result will be displayed below : </h2>
+                        <div id="result" class="skills__data"> Choose a file and press Analyze button </div>
+
+                        <script>
+      const form = document.getElementById('image-form');
+      const resultDiv = document.getElementById('result');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+
+        fetch('/api/analyze_image', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          resultDiv.innerText = data.text;
+        });
+      });
+    </script>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">AI Diagnosis</h2>
+                <div class="work__container bd-grid">
+          <p>The system uses natural language processing techniques to analyze text input from users and generate relevant responses. It does this by training on large datasets of natural language text and using pre-trained language models. However, the generated results may not always be 100% accurate due to the complexity of natural language and nuances in interpretation. Therefore, human judgment is still needed to determine the accuracy and relevance of the generated output.
+<br><br>
+                    In the below textbox, you can describe your current condition or whatever you are feeling in detail and our system will try to generate some suitable remedies, precautions and suggestions for the same.
+                    <br><br> <b>How are you feeling today.?
+                    <p/>
+                    <img src="/static/img/nlp.png" alt="">
+
+<div>
+  <form id="health-form">
+    <!--<input type="text" name="feeling"> -->
+      <textarea name="feeling" placeholder="Describe here" cols="0" rows="6" class="contact__input"></textarea>
+    <input type="submit" value="Get Suggestions" class = "button">
+  </form>
+    </div>
+                    <div>
+  <div id="suggestions" class="skills__data">
+      Output will be displayed here
+    <!-- Suggestions will be displayed here -->
+</div>
+
+  <script>
+    const form2 = document.getElementById('health-form');
+    const suggestionsDiv = document.getElementById('suggestions');
+
+    form2.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formData2 = new FormData(form2);
+
+
+      fetch('/api/suggest_remedies', {
+    method: 'POST',
+    body: formData2
+})
+      .then(response => response.json())
+      .then(data => {
+        suggestionsDiv.innerText = data.suggestions;
+      });
+    });
+  </script>
+       </div>
+</div>
+
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="{{ url_for('send_email') }}" method="post" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="mail" name="email" placeholder="Email" class="contact__input">
+                        <centre> You can enter your thoughts, feedback or suggestions in the below box.
+                        We highly encourage you to send us information about any wrong recognition or prognosis our system might have done in detail.
+                        <br></centre>
+                        <br>
+                        <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button" id="send-btn">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+<script>
+const sendBtn = document.getElementById("send-btn");
+
+sendBtn.addEventListener("click", function() {
+    // get all the input fields
+    const nameInput = document.getElementsByName("name")[0];
+    const emailInput = document.getElementsByName("email")[0];
+    const messageInput = document.getElementsByName("message")[0];
+
+    // validate the email address
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput.value)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // clear the input fields
+    nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+
+    alert("Thanks for your feedback!");
+});
+
+</script>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">AITR CSE Department</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">
+
+<div style="text-align: center;">
+  <div>
+    <h3 style="display: inline-block; margin-right: 20px;">Mitesh Khemani  </h3>
+    <a href="https://www.linkedin.com/in/profile-url-1" target="_blank" class="home__social-icon" style="color: hsl(var(--hue-color), 89%, 60%);"><i class='bx bxl-linkedin'></i></a>
+
+    <h3 style="display: inline-block; margin-right: 20px;">  Mehee Porwal</h3>
+    <a href="https://www.linkedin.com/in/profile-url-2" target="_blank" class="home__social-icon" style="color: hsl(var(--hue-color), 89%, 60%);"><i class='bx bxl-linkedin'></i></a>
+  </div>
+</div>
+
+
+            </p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </body>
+</html>
+
